@@ -3,64 +3,52 @@
     padding: 0px;
     box-sizing: border-box;
 }
-:root{
-    --oneClr: #ffa500;
-    --towClr: #4b0082;
-    --threeClr: #fff;
-    
+body{
+    min-height: 100vh;
 }
-img{
-    width: 100%;
+h2{
+    position: absolute;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-section{
-    position: fixed;
+.imgBx{ 
     top:0;
     left:0;
     width:100%;
     height:100%;
-    background: url(./img/bg.jpg);
-    background-attachment: fixed;
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)), url(img/bg.jpg);
+    background-size: cover;
+    position: fixed;
     background-position: center ;
-    clip-path: circle(00px at center);
+    clip-path: circle(0% at center);
+}
+.imgBx .cation{
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
 }
 .container{
     position: relative;
-    margin-top: 100vh;
-    height: 550px;
-    max-width: auto;
-    width: 100%;
-    background-color: var(--threeClr);
-    color: var(--towClr);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
+    min-height: 100vh;
+    margin-top: 200vh;
+    background: #fff;
+    padding: 100px;
 }
-.box{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px;
-}
-.box h2{
+.container h2{
+    position: relative;
     font-size: 22px;
     font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 10px;
 }
-.box p{
+.container p{
     font-size: 14px;
     font-weight: 400;
-    text-transform: capitalize;
-   
+    text-transform: capitalize; 
 }
-img{
-    width: 100%;
-}
-.gellary{
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 150px 150px 150px;
-}
+
