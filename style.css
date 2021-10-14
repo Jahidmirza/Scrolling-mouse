@@ -1,0 +1,25 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --oneClr: #ffa500;
+    --towClr: #4b0082;
+    --threeClr: #fff;
+    
+}
+body{
+    background-color: var(--oneClr);
+    color: var(--threeClr);
+}
+.container{
+    height: 100vh;
+    max-width: 1200px;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.myImg{
+    position: fixed;
+}
