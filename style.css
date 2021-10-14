@@ -9,17 +9,58 @@
     --threeClr: #fff;
     
 }
-body{
-    background-color: var(--oneClr);
-    color: var(--threeClr);
+img{
+    width: 100%;
+}
+section{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: url(./img/bg.jpg);
+    background-attachment: fixed;
+    background-position: center ;
+    clip-path: circle(00px at center);
 }
 .container{
-    height: 100vh;
-    max-width: 1200px;
+    position: relative;
+    margin-top: 100vh;
+    height: 550px;
+    max-width: auto;
     width: 100%;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    background-color: var(--threeClr);
+    color: var(--towClr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
 }
-.myImg{
-    position: fixed;
+.box{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.box h2{
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.box p{
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+   
+}
+img{
+    width: 100%;
+}
+.gellary{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 150px 150px 150px;
 }
